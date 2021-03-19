@@ -1,0 +1,13 @@
+plugins {
+  id 'application'
+}
+application {
+  mainClass='receive.Send'
+}
+apply plugin: 'java'
+repositories{
+    mavenCentral()
+}
+dependencies {
+  compile 'com.rabbitmq:amqp-client:5.11.0'
+}

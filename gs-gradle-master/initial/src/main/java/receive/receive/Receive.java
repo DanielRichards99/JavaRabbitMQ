@@ -1,4 +1,4 @@
-package hello;
+package receive.Receive;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

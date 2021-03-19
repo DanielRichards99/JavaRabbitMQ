@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloWorld'
+
+// Source for 3rd party libraries
+repositories {
+    mavenCentral()
+}
+
+// 3rd party libraries the project depends on
+dependencies {
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
+}
+
+jar {
+    archiveBaseName = 'gs-hello-world'
+    archiveVersion = '0.1.0'
+}
